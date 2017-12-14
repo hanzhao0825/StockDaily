@@ -22,6 +22,12 @@ def readSymbolListFromTXT(fn):
         lines = f.read().splitlines()
     return lines
 
+def readFilterFromTXT(fn):
+    fi = ''
+    with open(fn, 'r') as f:
+        fi = f.read()
+    return fi
+
 def compare_MA5_MA20(symbol):
     print symbol + '\t',
     price_data = fetchPriceDataFromYahoo(symbol, 20)

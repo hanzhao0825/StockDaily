@@ -3,7 +3,7 @@ import re
 
 def screen(f):
     result = []
-    url = 'https://finviz.com/screener.ashx?v=111&' + f
+    url = 'https://finviz.com/screener.ashx?' + f
     response = urllib2.urlopen(url)
     html = response.read()
     pattern = re.compile(r'Total: </b>(\d*) #1')
