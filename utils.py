@@ -25,7 +25,7 @@ def readSymbolListFromTXT(fn):
 def readFilterFromTXT(fn):
     fi = ''
     with open(fn, 'r') as f:
-        fi = f.read()
+        fi = f.read().strip()
     return fi
 
 def compare_MA5_MA20(symbol):
