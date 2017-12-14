@@ -2,7 +2,6 @@ import urllib2
 import re
 
 def screen(f):
-    f = 'f=exch_nasd,fa_debteq_u0.9,fa_epsyoy_high,fa_pe_u25,fa_peg_low,sh_price_o5&ft=4'
     result = []
     url = 'https://finviz.com/screener.ashx?v=111&' + f
     response = urllib2.urlopen(url)
