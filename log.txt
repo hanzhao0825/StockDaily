@@ -1,6 +1,0 @@
-Checking current stocks
-['AAOI', 'ADES']
-AAOI	39.710	42.293	SELL
-ADES	9.092	9.674	SELL
-
-Checking new stocks
